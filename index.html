@@ -2,10 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1, viewport-fit=cover"
+    />
+    <title>画板</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    Hi, 老孔!
+    <canvas id="xxx"></canvas>
+    <div id="action" class="action">
+      <svg id="pen" class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-brush"></use>
+      </svg>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use>
+      </svg>
+      <svg id="clear" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-clear"></use>
+      </svg>
+      <svg id="download" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-save"></use>
+      </svg>
+    </div>
+    <ol class="color">
+      <li id="black" class="black active"></li>
+      <li id="red" class="red"></li>
+      <li id="yellow" class="yellow"></li>
+      <li id="green" class="green"></li>
+      <li id="blue" class="blue"></li>
+    </ol>
+    <ol class="sizes">
+      <li id="thin" class="thin"></li>
+      <li id="thick" class="thick"></li>
+    </ol>
+    <script src="https://at.alicdn.com/t/font_1896711_lm94ch546jj.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,12 +1,21 @@
 {
   "name": "Electron-demo-1",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "b.js",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "Kong",
+    "mac": {
+      "category": "game"
+    }
   },
   "devDependencies": {
-    "electron": "6.0.0"
+    "electron": "6.0.0",
+    "electron-builder": "^22.8.1"
   }
 }
